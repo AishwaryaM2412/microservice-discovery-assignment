@@ -85,13 +85,13 @@ Initially no applications are running as displayed in above screenshot.
 
 Run Instance 1:
 ```bash
-mvn spring-boot:run -Dserver.port=8081
+mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
 ```
 ![alt text](image-1.png)
 
 Run Instance 2:
 ```bash
-mvn spring-boot:run -Dserver.port=8082
+mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8082
 ```
 
 ![alt text](image-3.png)
