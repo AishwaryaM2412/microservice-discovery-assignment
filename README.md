@@ -13,7 +13,7 @@ It includes:
 ## Architecture
 Client Service calls Product Service via Eureka.
 
-![alt text](image-2.png)
+![alt text](all_images/image-2.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ Client Service calls Product Service via Eureka.
 
 ## Project Structure
 
-![alt text](image-9.png)
+![alt text](all_images/image-9.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ cd eureka-server
 mvn spring-boot:run
 ```
 
-![alt text](image.png)
+![alt text](all_images/image.png)
 
 Initially no applications are running as displayed in above screenshot.
 
@@ -87,14 +87,14 @@ Run Instance 1:
 ```bash
 mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8081
 ```
-![alt text](image-1.png)
+![alt text](all_images/image-1.png)
 
 Run Instance 2:
 ```bash
 mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=8082
 ```
 
-![alt text](image-3.png)
+![alt text](all_images/image-3.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -104,7 +104,7 @@ cd client-service
 mvn spring-boot:run
 ```
 
-![alt text](image-4.png)
+![alt text](all_images/image-4.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -121,11 +121,11 @@ curl http://localhost:8080/fetch
 - Next request → response from port 8082
 - Requests alternate due to load balancing
 
-![alt text](image-5.png)
+![alt text](all_images/image-5.png)
 
-![alt text](image-6.png)
+![alt text](all_images/image-6.png)
 
-![alt text](image-7.png)
+![alt text](all_images/image-7.png)
 
 Now, in above screenshot, you can see 2 instances of product-service and 1 client-service running.
 
