@@ -17,7 +17,7 @@ Client Service calls Product Service via Eureka.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## ⚙️ Technologies Used
+## Technologies Used
 - Java 17
 - Spring Boot 3.2.5
 - Spring Cloud Eureka
@@ -27,19 +27,14 @@ Client Service calls Product Service via Eureka.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 📂 Project Structure
+## Project Structure
 ```
-microservice-discovery-assignment/
-├── eureka-server/
-├── product-service/
-├── client-service/
-├── architecture-diagram.png
-└── README.md
+![alt text](image-8.png)
 ```
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 🔧 Services Description
+## Services Description
 
 ### 1. Eureka Server
 - Acts as a **service registry**
@@ -72,7 +67,7 @@ microservice-discovery-assignment/
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## ▶️ How to Run the Project
+## Run the Project
 
 ### Step 1: Start Eureka Server
 ```bash
@@ -111,7 +106,7 @@ mvn spring-boot:run
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 🧪 Testing the Application
+## Testing the Application
 
 Open in browser or use curl:
 
@@ -132,7 +127,7 @@ curl http://localhost:8080/fetch
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 🔍 How It Works
+## Working
 1. Services register themselves with Eureka on startup.
 2. Eureka maintains a registry of all available services.
 3. Client Service queries Eureka to locate Product Service instances.
@@ -140,7 +135,7 @@ curl http://localhost:8080/fetch
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 📌 Key Concepts Demonstrated
+## Key Concepts Demonstrated
 1. Microservices Architecture
 2. Service Discovery
 3. Client-side Load Balancing
@@ -149,7 +144,7 @@ curl http://localhost:8080/fetch
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 📊 Observations
+## Observations
 - Services are registered automatically with Eureka
 - The client does not rely on fixed URLs
 - Requests are distributed across instances
@@ -157,7 +152,7 @@ curl http://localhost:8080/fetch
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-## 👩‍💻 Author
+## Author
 - Aishwarya Madhave
 - Course: Enterprise Distributed Systems
 - Semester: Spring 2026
