@@ -29,7 +29,7 @@ Client Service calls Product Service via Eureka.
 
 ## Project Structure
 
-![alt text](image-10.png)
+![alt text](image-9.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -76,6 +76,8 @@ mvn spring-boot:run
 ```
 
 ![alt text](image.png)
+
+Initially no applications are running as displayed in above screenshot.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -124,6 +126,8 @@ curl http://localhost:8080/fetch
 ![alt text](image-6.png)
 
 ![alt text](image-7.png)
+
+Now, in above screenshot, you can see 2 instances of product-service and 1 client-service running.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
